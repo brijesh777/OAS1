@@ -31,7 +31,8 @@
     Confirm Password:-<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
 </p>
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
-    Address:-<textarea id="TextArea1" cols="20" name="S1" rows="2"></textarea></p>
+    Address:-<asp:TextBox ID="TextBox10" runat="server" Height="38px" Width="179px"></asp:TextBox>
+</p>
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
     City:-<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
 </p>
@@ -139,12 +140,16 @@
         <asp:ListItem>2004</asp:ListItem>
         <asp:ListItem>2005</asp:ListItem>
     </asp:DropDownList>
+&nbsp;
+    <asp:Label ID="Label4" runat="server"></asp:Label>
 </p>
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
     Gender:-&nbsp;&nbsp;
     <asp:RadioButton ID="RadioButton1" runat="server" Checked="True" GroupName="gender" Text="Male" />
 &nbsp;
     <asp:RadioButton ID="RadioButton2" runat="server" GroupName="gender" Text="Female" />
+&nbsp;
+    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
 </p>
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
     Physic:-<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
@@ -161,7 +166,7 @@
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
     &nbsp;</p>
 <p style="font-weight: 700; font-size: x-large; margin-left: 360px">
-    <asp:Button ID="Button1" runat="server" Height="53px" style="font-weight: 700; font-size: x-large" Text="Submit" Width="128px" />
+    <asp:Button ID="Button1" runat="server" Height="53px" style="font-weight: 700; font-size: x-large" Text="Submit" Width="128px" OnClick="Button1_Click" />
 </p>
 
 
